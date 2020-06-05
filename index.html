@@ -1,1 +1,72 @@
-<div> hello world </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calling All Rams</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="main-container mx-auto col-md-8">
+
+    <div class="inputs-container my-4">
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input
+            class="form-control"
+            placeholder="Your name"
+            oninput="updateName(this.value)"
+            />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Class</label>
+        <div class="col-sm-10">
+          <input
+            class="form-control"
+            placeholder="Your class"
+            oninput="updateClassYear(this.value)"
+            />
+        </div>
+      </div>
+    </div>
+
+    <div id="letter-body">
+      Hi Father McShane,
+      <br>
+      <br>
+      <div id="first-line"></div>
+      <br>
+      <div id="body-text"></div>
+      <br>
+      Thank you. 
+    </div>
+    <br>
+    <div class="row">
+      <div class="mx-auto">
+        <button
+          class="btn btn-primary"
+          onclick="sendEmail()"
+          >
+          Send via Email
+        </button>
+        <button
+          class="btn btn-secondary"
+          onclick="copyToClipboard()"
+          >
+          Copy Text
+        </button>
+      </div>
+    </div>
+    <br>
+    <div class="row" >
+      <img class="mx-auto" src="Fordham_University_seal.svg"/>
+    </div>
+  </div>
+
+</body>
+</html>
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
