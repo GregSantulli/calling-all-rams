@@ -56,6 +56,7 @@ function copyToClipboard(element) {
   element = $('<textarea>').appendTo('body').val(text).select()
   document.execCommand('copy')
   element.remove()
+  alert("Text copied to clipboard")
 }
 
 updateFirstLine()
