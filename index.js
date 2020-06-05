@@ -20,7 +20,7 @@ function updateFirstLine(){
   document.getElementById("body-text").innerText = BODY_TEXT
 }
 
-const BODY_TEXT = "We appreciate your statement on the death of George Floyd. We specifically call on Fordham to divest from the NYPD and to donate to NYC Bail Funds in support of those protesting racial injustice right now. We look to you for actionable leadership regarding the university's commitment to racial justice for Black lives"
+const BODY_TEXT = "We appreciate your statement on the death of George Floyd. We specifically call on Fordham to divest from the NYPD and to donate to NYC Bail Funds in support of those protesting racial injustice right now. We look to you for actionable leadership regarding the university's commitment to racial justice for Black lives."
 
 function getLetterContent(){
   return [
